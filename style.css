@@ -33,7 +33,7 @@ main{
 .card__left-side{
     background-image: url(./images/image-product-desktop.jpg);
     width: 350px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 0px 0px 10px;
 }
