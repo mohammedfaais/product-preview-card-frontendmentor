@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-container{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.card__left-side{
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card__right-side{
+  padding-left: 20px;
+}
+
+.card__right-side h4 {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    color:  #93969F;
+    text-transform: uppercase;
+}
+
+.card__right-side h1{
+  font-family: 'Fraunces', serif;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card__right-side p {
+    color: #93969F;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+.card__right-side .price-1{
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    position: relative;
+}
+
+.card__right-side .price{
+    position: relative;
+}
+
+.card__right-side .price-2{
+    text-decoration:line-through;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #93969F;
+    position: absolute;
+    top: 20%;
+}
+
+.card__right-side .card-btn {
+    display: block;
+    background: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.card__right-side .card-btn:hover{
+    cursor: pointer;
+    background: hsl(158, 36%, 18%);
+}
+ 
+.card-btn > i {
+    margin-right: 10px;
+}
+
+@media (max-width:375px){
+    .card-container{
+     flex-direction: column;
+     width: 300px;
+    }
+    .card__left-side{
+        background-image: url(./images/image-product-mobile.jpg);
+        height: 200px;
+        width: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    main{
+        margin: 20px 0px;
+    }
+}
